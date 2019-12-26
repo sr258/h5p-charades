@@ -4,12 +4,13 @@
   "description": "A H5P game activity for guessing words",
   "private": true,
   "scripts": {
-    "test": "jest",
     "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack -p",
-    "watch": "./node_modules/.bin/webpack --watch",
-    "format": "prettier --write {src,tests}/**/*.{js,css}",
     "format:check": "prettier --check {src,tests}/**/*.{js,css}",
-    "lint": "eslint {src,tests}/**/*.js"
+    "format": "prettier --write {src,tests}/**/*.{js,css}",
+    "lint": "eslint {src,tests}/**/*.js",
+    "test:coverage": "jest --coverage=true --collectCoverageFrom=src/**/*.js",
+    "test": "jest",
+    "watch": "./node_modules/.bin/webpack --watch"
   },
   "repository": {
     "type": "git",
