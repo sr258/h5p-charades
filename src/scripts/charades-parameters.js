@@ -1,6 +1,6 @@
-export class CharadeParameters {
+export default class CharadesParameters {
     /**
-     * Constructs a CharadeParamters object using the paramters passed to it.
+     * Constructs a CharadesParamters object using the paramters passed to it.
      * Fills missing properties with default values.
      * @param parameters the parameters whose values should be used (as received from H5P)
      */
@@ -17,10 +17,10 @@ export class CharadeParameters {
             allowRetry: true
         };
 
-        // assign actual values
+        // assign actual values coming from the content.json file
         this._assignValueIfDefined(this, parameters, 'taskDescription');
         this._assignValueIfDefined(this, parameters, 'items');
-        if (this.options !== undefined) {
+        if (parameters !== undefined && parameters.options !== undefined) {
             this._assignValueIfDefined(
                 this.options,
                 parameters.options,
