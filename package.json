@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/h5p/h5p-boilerplate.git"
+    "url": "git+https://github.com/sr258/h5p-charades.git"
   },
   "keywords": [
     "h5p",
@@ -19,18 +19,18 @@
   "author": "Sebastian Rettig",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "babel-loader": "^8.0.6",
-    "cross-env": "^5.2.1",
-    "css-loader": "^1.0.1",
-    "file-loader": "^2.0.0",
-    "mini-css-extract-plugin": "^0.4.4",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "resolve-url-loader": "^3.1.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.41.2",
+    "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   }
 }
