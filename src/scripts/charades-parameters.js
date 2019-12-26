@@ -1,3 +1,6 @@
+/**
+ * Stores the parameters of the content.json file.
+ */
 export default class CharadesParameters {
     /**
      * Constructs a CharadesParamters object using the paramters passed to it.
