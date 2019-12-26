@@ -1,24 +1,24 @@
 {
-  "title": "Hello world",
-  "description": "Example H5P content type for getting started",
-  "majorVersion": 1,
-  "minorVersion": 0,
+  "title": "Charades",
+  "description": "A H5P game activity for guessing words",
+  "majorVersion": 0,
+  "minorVersion": 1,
   "patchVersion": 0,
   "runnable": 1,
-  "author": "Joubel",
+  "author": "Sebastian Rettig",
   "license": "MIT",
-  "machineName": "H5P.HelloWorld",
+  "machineName": "H5P.Charades",
   "embedTypes": [
     "iframe"
   ],
   "preloadedJs": [
     {
-      "path": "dist/h5p-hello-world.js"
+      "path": "dist/h5p-charades.js"
     }
   ],
   "preloadedCss": [
     {
-      "path": "dist/h5p-hello-world.css"
+      "path": "dist/h5p-charades.css"
     }
   ]
 }

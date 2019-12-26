@@ -1,7 +1,7 @@
 {
-  "name": "h5p-boilerplate",
-  "version": "1.0.0",
-  "description": "Example H5P Content Type for getting started",
+  "name": "h5p-charades",
+  "version": "0.1.0",
+  "description": "A H5P game activity for guessing words",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,7 @@
     "h5p",
     "library"
   ],
-  "author": "Joubel",
+  "author": "Sebastian Rettig",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.7.5",

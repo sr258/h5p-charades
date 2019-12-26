@@ -21,14 +21,14 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'h5p-hello-world.css'
+      filename: 'h5p-charades.css'
     })
   ],
   entry: {
-    dist: './src/entries/h5p-hello-world.js'
+    dist: './src/entries/h5p-charades.js'
   },
   output: {
-    filename: 'h5p-hello-world.js',
+    filename: 'h5p-charades.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
