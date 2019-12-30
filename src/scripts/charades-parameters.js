@@ -24,40 +24,40 @@ export default class CharadesParameters {
     // assign actual values coming from the content.json file
     this._assignValueIfDefined(this, parameters, 'taskDescription');
     this._assignValueIfDefined(this, parameters, 'items');
-    if (parameters !== undefined && parameters.options !== undefined) {
+    if (parameters !== undefined && parameters.behavior !== undefined) {
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'customTime'
       );
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'timeLimit'
       );
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'cardSelection'
       );
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'itemCount'
       );
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'randomOrder'
       );
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'showInstructions'
       );
       this._assignValueIfDefined(
         this.behavior,
-        parameters.options,
+        parameters.behavior,
         'allowRetry'
       );
     }
