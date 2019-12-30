@@ -11,8 +11,9 @@ export default class CharadesParameters {
     // assign default values that are used as fallbacks
     this.taskDescription = 'Explain the words.';
     this.items = ['Guess me!'];
-    this.options = {
-      itemTime: 20,
+    this.behavior = {
+      customTime: false,
+      timeLimit: 60,
       cardSelection: 'forceAll',
       itemCount: 10,
       randomOrder: true,
@@ -24,25 +25,38 @@ export default class CharadesParameters {
     this._assignValueIfDefined(this, parameters, 'taskDescription');
     this._assignValueIfDefined(this, parameters, 'items');
     if (parameters !== undefined && parameters.options !== undefined) {
-      this._assignValueIfDefined(this.options, parameters.options, 'itemTime');
       this._assignValueIfDefined(
-        this.options,
+        this.behavior,
+        parameters.options,
+        'customTime'
+      );
+      this._assignValueIfDefined(
+        this.behavior,
+        parameters.options,
+        'timeLimit'
+      );
+      this._assignValueIfDefined(
+        this.behavior,
         parameters.options,
         'cardSelection'
       );
-      this._assignValueIfDefined(this.options, parameters.options, 'itemCount');
       this._assignValueIfDefined(
-        this.options,
+        this.behavior,
+        parameters.options,
+        'itemCount'
+      );
+      this._assignValueIfDefined(
+        this.behavior,
         parameters.options,
         'randomOrder'
       );
       this._assignValueIfDefined(
-        this.options,
+        this.behavior,
         parameters.options,
         'showInstructions'
       );
       this._assignValueIfDefined(
-        this.options,
+        this.behavior,
         parameters.options,
         'allowRetry'
       );

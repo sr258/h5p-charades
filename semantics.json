@@ -1,96 +1,101 @@
 [
-    {
-        "label": "Task description",
-        "importance": "high",
-        "name": "taskDescription",
-        "type": "text",
-        "widget": "html",
-        "placeholder": "Explain the words.",
-        "default": "Explain the words.",
-        "description": "The task description is shown to the players before the game starts."
-    },
-    {
-        "label": "Items",
-        "type": "list",
-        "description": "These items are displayed to the players one by one.",
-        "importance": "high",
-        "name": "items",
-        "entity": "item",
-        "min": 1,
-        "field": {
-            "name": "item",
-            "type": "text",
-            "label": "Item",
-            "widget": "html",
-            "placeholder": "A word the players have to describe."
-        }
-    },
-    {
-        "label": "Options",
-        "type": "group",
-        "description": "Fine tunes the game",
-        "importance": "medium",
-        "name": "options",
-        "fields": [
-            {
-                "label": "Time per items",
-                "name": "itemTime",
-                "description": "in seconds (min. 5s)",
-                "type": "number",
-                "min": 5,
-                "max": 120,
-                "step": 1,
-                "default": 20
-            },
-            {
-                "label": "Card selections",
-                "name": "cardSelection",
-                "type": "select",
-                "default": "forceAll",
-                "options": [
-                    { "value": "forceAll", "label": "Always show all cards" },
-                    {
-                        "value": "forceSelection",
-                        "label": "Show a random selection"
-                    },
-                    {
-                        "value": "user",
-                        "label": "Let the user decide"
-                    }
-                ]
-            },
-            {
-                "label": "Number of items to show",
-                "name": "itemCount",
-                "type": "number",
-                "min": 1,
-                "step": 1,
-                "default": 10
-            },
-            {
-                "label": "Randomize order of cards",
-                "name": "randomOrder",
-                "type": "boolean",
-                "default": true
-            },
-            {
-                "label": "Show instructions how to play at the beginning",
-                "name": "showInstructions",
-                "type": "boolean",
-                "default": true
-            },
-            {
-                "label": "Allow replays",
-                "name": "allowRetry",
-                "type": "boolean",
-                "default": true
-            },
-            {
-                "label": "Always disable sound",
-                "name": "disableSound",
-                "type": "boolean",
-                "default": false
-            }
-        ]
+  {
+    "label": "Task description",
+    "importance": "high",
+    "name": "taskDescription",
+    "type": "text",
+    "widget": "html",
+    "placeholder": "Explain the words.",
+    "default": "Explain the words.",
+    "description": "The task description is shown to the players before the game starts."
+  },
+  {
+    "label": "Items",
+    "type": "list",
+    "description": "These items are displayed to the players one by one.",
+    "importance": "high",
+    "name": "items",
+    "entity": "item",
+    "min": 1,
+    "field": {
+      "name": "item",
+      "type": "text",
+      "label": "Item",
+      "widget": "html",
+      "placeholder": "A word the players have to describe."
     }
+  },
+  {
+    "label": "Behaviour",
+    "type": "group",
+    "description": "Fine tunes the game",
+    "importance": "medium",
+    "name": "behavior",
+    "fields": [
+      {
+        "label": "Allow the players to set their own time limit",
+        "name": "customTime",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "label": "Time limit",
+        "name": "timeLimit",
+        "description": "The maximum time of the full game in seconds (min. 20s)",
+        "type": "number",
+        "min": 20,
+        "step": 1,
+        "default": 60
+      },
+      {
+        "label": "Card selections",
+        "name": "cardSelection",
+        "type": "select",
+        "default": "forceAll",
+        "options": [
+          { "value": "forceAll", "label": "Always show all cards" },
+          {
+            "value": "forceSelection",
+            "label": "Show a random selection"
+          },
+          {
+            "value": "user",
+            "label": "Let the user decide"
+          }
+        ]
+      },
+      {
+        "label": "Number of items to show",
+        "name": "itemCount",
+        "type": "number",
+        "min": 1,
+        "step": 1,
+        "default": 10
+      },
+      {
+        "label": "Randomize order of cards",
+        "name": "randomOrder",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "label": "Show instructions how to play at the beginning",
+        "name": "showInstructions",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "label": "Allow replays",
+        "name": "allowRetry",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "label": "Always disable sound",
+        "name": "disableSound",
+        "type": "boolean",
+        "default": false
+      }
+    ]
+  }
 ]
