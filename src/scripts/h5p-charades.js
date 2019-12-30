@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import CharadesParameters from './charades-parameters';
 
 // This comment tells ESLint about the global H5P variable.
@@ -18,8 +21,13 @@ export default class Charades extends H5P.EventDispatcher {
     super();
 
     const params = new CharadesParameters(rawParams);
-    this.element = document.createElement('div');
-    this.element.innerText = params.taskDescription;
+
+    this.reactDom = (
+      <div>
+        <p>React</p>
+        <p>{params.taskDescription}</p>
+      </div>
+    );
 
     /**
      * Attach library to wrapper.
@@ -27,8 +35,7 @@ export default class Charades extends H5P.EventDispatcher {
      * @param {jQuery} $wrapper Content's container.
      */
     this.attach = function($wrapper) {
-      $wrapper.get(0).classList.add('h5p-charades');
-      $wrapper.get(0).appendChild(this.element);
+      ReactDOM.render(this.reactDom, $wrapper.get(0));
     };
   }
 }

@@ -34,10 +34,10 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
         query: {
-          presets: ['@babel/env']
+          presets: ['@babel/env', '@babel/preset-react']
         }
       },
       {
