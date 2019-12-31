@@ -7,5 +7,6 @@ global H5P
 */
 
 // Load library
+// eslint-disable-next-line no-global-assign
 H5P = H5P || {};
 H5P.Charades = Charades;
