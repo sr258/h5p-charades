@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import CharadesParameters from './charades-parameters';
 
 export default class CharadesState {
